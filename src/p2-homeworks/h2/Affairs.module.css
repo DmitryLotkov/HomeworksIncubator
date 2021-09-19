@@ -1,0 +1,45 @@
+
+.main {
+    margin-left: 0.5em;
+    display: grid;
+    width: 20em;
+    height: 3em;
+    grid-template-columns: 4fr 3fr 3fr;
+    grid-column-gap: 1em;
+}
+
+.affairName {
+    color: forestgreen;
+}
+.buttonDel {
+    background-color: forestgreen;
+    height: 2em;
+    border-radius: 5px;
+}
+.filteredButtons{
+    width: 18em;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 2fr 2fr;
+    grid-column-gap: 2em;
+}
+.buttonFilter{
+    background-color: forestgreen;
+    border-radius: 5px;
+    height: 1.5em;
+}
+.priorityYellow {
+    color: darkorange;
+}
+.priorityRed {
+    color: red;
+}
+.priorityGreen {
+    color: green;
+}
+.buttonUsed {
+    background-color: lightgreen;
+}
+.title {
+    color: green;
+    margin-bottom: 1em;
+}

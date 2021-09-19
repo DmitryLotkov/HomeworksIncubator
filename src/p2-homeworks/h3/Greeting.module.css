@@ -1,0 +1,21 @@
+
+
+.error {
+    border: 1px solid red;
+}
+.errorTitle {
+    color: red;
+}
+.errorCommon {
+    background-color: darkgreen;
+    color: lightgreen;
+}
+.buttonAdd {
+    margin-left: 1em;
+    width: 4em;
+    background-color: darkgreen;
+    color: lightgreen;
+}
+.buttonUsed {
+    background-color: lightgreen;
+}
