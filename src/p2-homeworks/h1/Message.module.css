@@ -1,0 +1,57 @@
+
+.wrapper {
+    background: #b8c13c;
+    width: 20em;
+    height: 7em;
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+}
+.userImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-left: 0.5em;
+    margin-top: 2em;
+}
+
+.message {
+    display: grid;
+    grid-template-areas:
+    "nameUser time"
+    "messageText .";
+    position: relative;
+    background: #022d02;
+    border-radius: 0.7em 0.7em 0.7em 0;
+    margin: 3%;
+    padding-top: 1em;
+    padding-left: 2em;
+}
+.message::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    display: block;
+    width: 25px;
+    height:25px;
+    background: radial-gradient(6vh at top left, transparent 49%, #022d02 51%)
+    no-repeat right bottom;
+}
+.nameUser {
+    grid-area: nameUser;
+    color: #c399c3;
+    display: block;
+}
+
+.messageText {
+    grid-area: messageText;
+    color: #adb3b1;
+}
+.time {
+    grid-area: time;
+    color: darkolivegreen;
+    display: block;
+    padding-right: 1em;
+    text-align: right;
+    padding-top: 3em;
+}
