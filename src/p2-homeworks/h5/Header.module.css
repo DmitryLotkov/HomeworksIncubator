@@ -1,0 +1,36 @@
+.navLinkItem{
+    color: #000000;
+    padding-right: 1em;
+
+}
+.navLinkItem a{
+    color: #00b6fe;
+    text-decoration: none;
+}
+.navLinkItem a:hover{
+    color: darkorange;
+}
+.navLinkItem a.activeLink{
+    color: #578d29;
+}
+.navWrapper {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #00b6fe;
+    border-radius: 0.3em;
+    margin-left: 0.1em;
+}
+.slideNavBar{
+    position: relative;
+    margin-left: -500px;
+}
+
+.navWrapper:hover{
+    transform: translateX(13em);
+    transition: 0.7s;
+}
+.navWrapper:hover .slideNavBar{
+    margin-left: 0.5em;
+    transform: translateX(-13em);
+    transition: 0.7s;
+}
