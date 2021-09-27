@@ -1,12 +1,12 @@
 import React from 'react'
+import s from "./../Header.module.css";
 
-function Error404() {
+export function Error404() {
     return (
-        <div>
-            <img src="https://img.lovepik.com/element/40021/7866.png_860.png" alt="404ErrorImg"/>
-            <h1>Oops! Page not found</h1>
+        <div className={s.Error404}>
+            <img src="https://t-3.tstatic.net/jualbeli/img/njajal/2019/8/Mengenal-Penyebab-dari--Kode-Kesalahan--Error-404-Page-Not-Found---Bagaimana-Hal-Ini-Dapat-Terjadi---master-144078968.jpg" alt="404ErrorImg"/>
+            <h1>Go back and try a different link</h1>
 
-            <div>Go back and try a different link</div>
         </div>
     )
 }

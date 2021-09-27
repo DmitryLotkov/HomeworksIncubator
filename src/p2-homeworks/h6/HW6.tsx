@@ -1,16 +1,30 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {restoreState, saveState} from './localStorage/localStorage'
 
 function HW6() {
     const [value, setValue] = useState<string>('')
+    /*useEffect(()=>
+            localStorage.setItem('editable-span-value',value),
+        [value]);
+
+    useEffect(()=>{
+        let newStringValue = localStorage.getItem('editable-span-value');
+        if(newStringValue){
+            setValue(newStringValue);
+        }
+    },  [])*/
 
     const save = () => {
         saveState<string>('editable-span-value', value)
+
+
     }
     const restore = () => {
-        // setValue()
+        if (value !== null) {
+            setValue(restoreState<string>('editable-span-value', JSON.stringify(value)))
+        }
     }
 
     return (
@@ -23,7 +37,7 @@ function HW6() {
                 <SuperEditableSpan
                     value={value}
                     onChangeText={setValue}
-                    spanProps={{children: value ? undefined : 'enter text...'}}
+                    spanProps={{children: value ? undefined : ' Enter text...'}}
                 />
             </div>
             <SuperButton onClick={save}>save</SuperButton>

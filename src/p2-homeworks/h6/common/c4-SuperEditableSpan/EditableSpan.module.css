@@ -1,0 +1,8 @@
+.spanClassName:before {
+    content: "\270E";
+
+
+}
+.spanClassName {
+    color: #385898;
+}

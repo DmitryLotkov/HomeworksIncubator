@@ -34,6 +34,7 @@
     transform: translateX(-13em);
     transition: 0.7s;
 }
-.Eror404{
-
+.Error404{
+    background-color: #ffffff;
+    text-align: center;
 }
