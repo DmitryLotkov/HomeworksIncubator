@@ -1,0 +1,20 @@
+
+.Container{
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 10em;
+
+}
+.SpanName {
+    color: #385898;
+    margin-left: 1em;
+
+}
+.SpanAge {
+    color: #385898;
+    text-align: right;
+}
+.Buttons{
+    margin-top: 0.5em;
+}
