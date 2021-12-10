@@ -30,15 +30,11 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
         onChange && onChange(e);
         onChangeOption && onChangeOption(e.currentTarget.value)
 
-
-        console.log(`сработал onChange на селекте выбрал ${e.currentTarget.value}`)
-
     }
 
     return (
         <select onChange={onChangeCallback} {...restProps} value={value}>
             {mappedOptions}
-            {console.log(`value для селекта = ${value}`)}
         </select>
     )
 }

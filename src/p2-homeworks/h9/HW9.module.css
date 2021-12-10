@@ -1,0 +1,12 @@
+.hidden{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+    color:#385898;
+    width: 8rem;
+}
+.stringTime{
+    width: 8rem;
+    color:#385898
+}

@@ -1,39 +1,36 @@
 .navLinkItem{
     color: #000000;
     padding-right: 1em;
+    text-decoration: none;
 
 }
-.navLinkItem a{
+.navLinkItem {
     color: #00b6fe;
     text-decoration: none;
 }
-.navLinkItem a:hover{
+.navLinkItem:hover{
+    color: #20ab53;
+}
+.activeLink{
     color: darkorange;
 }
-.navLinkItem a.activeLink{
-    color: #578d29;
-}
-.navWrapper {
-    width: 1.5em;
-    height: 1.5em;
+.square {
+    width: 1.5rem;
+    height: 1.5rem;
     background-color: #00b6fe;
     border-radius: 0.3em;
-    margin-left: 0.1em;
 }
-.slideNavBar{
-    position: relative;
-    margin-left: -500px;
+.wrapper {
+    display: flex;
+    width: 28rem;
+    transition-duration: 1000ms;
+    transform: translate(-12.5rem);
+}
+.wrapper:hover{
+    transform: translate(0);
+    transition-duration: 500ms;
 }
 
-.navWrapper:hover{
-    transform: translateX(13em);
-    transition: 0.7s;
-}
-.navWrapper:hover .slideNavBar{
-    margin-left: 0.5em;
-    transform: translateX(-13em);
-    transition: 0.7s;
-}
 .Error404{
     background-color: #ffffff;
     text-align: center;

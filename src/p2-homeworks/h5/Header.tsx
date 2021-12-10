@@ -5,13 +5,11 @@ import {PATH} from "./Routes";
 
 function Header() {
     return (
-        <div className={s.navWrapper}>
-            <div className={s.slideNavBar}>
-                <span className={s.navLinkItem}><NavLink to={PATH.PRE_JUNIOR} activeClassName={s.activeLink}>preJunior</NavLink></span>
-                <span className={s.navLinkItem}><NavLink to={PATH.Junior} activeClassName={s.activeLink}>junior</NavLink></span>
-                <span className={s.navLinkItem}><NavLink to={PATH.JuniorPlus} activeClassName={s.activeLink}>junior+</NavLink></span>
-            </div>
-
+        <div className={s.wrapper}>
+                <NavLink to={PATH.PRE_JUNIOR} className={s.navLinkItem} activeClassName={s.activeLink}>preJunior</NavLink>
+                <NavLink to={PATH.Junior} className={s.navLinkItem} activeClassName={s.activeLink}>junior</NavLink>
+                <NavLink to={PATH.JuniorPlus} className={s.navLinkItem} activeClassName={s.activeLink}>junior+</NavLink>
+                <div className={s.square}/>
         </div>
     )
 }
