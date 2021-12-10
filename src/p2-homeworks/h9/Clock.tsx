@@ -37,9 +37,9 @@ function Clock() {
      let stringTime = `${addZeroToHours()}:${addZeroToMinutes()}:${addZeroToSeconds()}`;*/
 
     const addZeroToDay = () =>
-        date.getDay() < 10 ? `0${date.getDay()}` : `${date.getDay()}`;
+        date.getDate() < 10 ? `0${date.getDate()}` : `${date.getDate()}`;
     const addZeroToMonth = () =>
-        date.getMonth() < 10 ? `0${date.getMonth()}` : `${date.getMonth()}`;
+        date.getMonth() < 10 ? `0${date.getMonth()+1}` : `${date.getMonth()+1}`;
 
     let stringTime = date.toLocaleTimeString();
 
