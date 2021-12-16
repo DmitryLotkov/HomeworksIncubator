@@ -1,0 +1,31 @@
+@-webkit-keyframes loader {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes loader {
+    100% {
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    border: 6px solid #385898;
+    margin: 0 15px 15px 0;
+    border-right-color: transparent;
+    border-radius: 100%;
+    -webkit-animation: loader 0.8s infinite linear;
+    -moz-animation: loader 0.8s infinite linear;
+    animation: loader 0.8s infinite linear;
+}

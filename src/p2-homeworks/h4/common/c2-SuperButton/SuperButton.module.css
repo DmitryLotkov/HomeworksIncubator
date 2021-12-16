@@ -36,8 +36,7 @@
     color: #385898;
     background-color: #e7f3ff;
     cursor: pointer;
-    user-select: none;
-    appearance: none;
+
     touch-action: manipulation;
 }
 .default:focus-visible {
