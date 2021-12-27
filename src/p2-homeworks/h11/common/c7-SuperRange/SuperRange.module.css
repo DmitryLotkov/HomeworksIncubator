@@ -1,3 +1,28 @@
 .range {
-
+    width: 250px;
+    color: #385898;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+    vertical-align:top;
 }
+.leftValue {
+    color: #385898;
+    margin-right: 1rem;
+    display: inline-block;
+    width: 1rem;
+    vertical-align:top;
+}
+.leftValueCustom {
+    color: #385898;
+    margin-right: 1rem;
+    display: inline-block;
+    width: 1rem;
+    vertical-align:bottom;
+}
+.rightValue{
+    color: #385898;
+    margin-left: 1rem;
+    vertical-align:bottom;
+}
+
+

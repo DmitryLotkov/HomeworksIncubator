@@ -15,7 +15,6 @@ function HW10() {
     };
     //@ts-ignore
     window.store=store;
-    console.log(store.getState());
     return (
         <div>
             <hr/>
