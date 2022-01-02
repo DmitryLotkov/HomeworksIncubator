@@ -5,7 +5,6 @@ import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "../h10/bll/store";
 import {changeThemeAC} from "./bll/themeReducer";
 
-
 const themes = ['dark', 'red', 'green'];
 
 export function HW12() {
